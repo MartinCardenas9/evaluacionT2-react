@@ -43,7 +43,7 @@ function App() {
     <>
       <header>
         <h1 id="tituloHeader" style={{ color: colores[colorIndex] }}>
-          Evaluación T1
+          Evaluación T2
         </h1>
       </header>
 
