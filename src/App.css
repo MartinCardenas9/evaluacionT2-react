@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px 0;
+}
+
+#tituloHeader {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#reloj {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+#imagenes {
+  margin: 20px 0;
+}
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-imagen img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-cambiar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.btn-cambiar:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.btn-cambiar.izquierda {
+  left: 10px;
+}
+
+.btn-cambiar.derecha {
+  right: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+footer span {
+  margin: 0 10px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.icono {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 0.8s ease;
+}
+
+.icono.activo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icono:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
